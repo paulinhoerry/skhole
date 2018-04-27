@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="minimum-scale=1.0, width=device-width" name="viewport">
+	<title>Add / To-do</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+    <form class="form-container">
+      <h1 class="title">New List Item</h1>
+      <p class="description">Add a new item to your to-do list.</p>
+      <div class="form-group">
+        <label for="item">Item Description</label>
+        <input name="item" type="text" placeholder="Enter item (e.g. Buy milk, Bring camera, Take a break)" autofocus autocomplete="off" required>
+      </div>
+      <button class="btn submit" type="submit">Add Item</button>
+    </form>
+
+    <div class="signup-container">
+      <p>Want to see your items?</p><a class="link" href="/list.html">&nbsp;Go to list.</a>
+    </div>
+  </div>
+
+	<!-- Insert API Client link below -->
+  <script src="https://cdn.wedeploy.com/api/4.2.0/wedeploy.js"></script>
+
+	<!-- Insert API Client link above -->
+	<script src="index.js"></script>
+</body>
+</html>

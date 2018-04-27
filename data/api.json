@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/tasks/*",
+    "data": true
+  },
+  {
+    "path": "/users/*",
+    "data": true
+  }
+]
