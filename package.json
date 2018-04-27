@@ -1,0 +1,44 @@
+{
+  "name": "skhole",
+  "version": "1.0.0",
+  "description": "This template will help you through the process of deploying an Data project on the Web.",
+  "main": "public/index.js",
+  "scripts": {
+    "clear": "rimraf lib",
+    "build": "npm run clear && ./node_modules/.bin/babel --out-dir public ui",
+    "build:watch": "npm run build -- --watch",
+    "lint": "./node_modules/.bin/eslint ui/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulinhoerry/skhole.git"
+  },
+  "keywords": [
+    "school",
+    "nodejs",
+    "es6",
+    "opensource"
+  ],
+  "author": "Paulo Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulinhoerry/skhole/issues"
+  },
+  "homepage": "https://github.com/paulinhoerry/skhole#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "husky": "^0.14.3",
+    "rimraf": "^2.6.2"
+  }
+}
